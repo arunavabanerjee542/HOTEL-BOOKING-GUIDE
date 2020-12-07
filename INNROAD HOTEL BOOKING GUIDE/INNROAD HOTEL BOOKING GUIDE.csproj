@@ -43,8 +43,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Normal Classes\Address.cs" />
+    <Compile Include="Normal Classes\CheckAvailability.cs" />
+    <Compile Include="Normal Classes\Customer.cs" />
+    <Compile Include="Implementations\ErrorVerificationImpl.cs" />
+    <Compile Include="Interfaces\ErrorVerificationIntf.cs" />
+    <Compile Include="Normal Classes\Hotel.cs" />
+    <Compile Include="Implementations\HotelAvailabilityImpl.cs" />
+    <Compile Include="Interfaces\HotelAvailabilityIntf.cs" />
+    <Compile Include="Normal Classes\Logger.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Room.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
