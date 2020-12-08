@@ -103,7 +103,7 @@ namespace INNROAD_HOTEL_BOOKING_GUIDE.Normal_Classes
 
             int numofpersons = Convert.ToInt32(Console.ReadLine());
 
-           // viewhelper.showAvailablerooms();
+           viewhelper.ShowAvailableRooms( HotelList,hotelandcity[hotelcode],numofpersons);
 
 
 

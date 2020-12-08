@@ -10,6 +10,7 @@ namespace INNROAD_HOTEL_BOOKING_GUIDE.Normal_Classes
     {
        public int Log()
         {
+            Console.WriteLine();
             Console.WriteLine(" How can we help you ");
             Console.WriteLine(" 1---> Check out room availability ");
             Console.WriteLine(" 2--> Filter the Hotels based on their price ");

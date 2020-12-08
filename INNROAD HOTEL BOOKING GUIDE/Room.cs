@@ -10,7 +10,7 @@ namespace INNROAD_HOTEL_BOOKING_GUIDE
     {
         public int  nunberofperson;
         public int cost;
-        int vacantrooms;
+        public int vacantrooms;
        public Room (int numberofperson,int cost,int vacantrooms)
         {
             this.nunberofperson = numberofperson;

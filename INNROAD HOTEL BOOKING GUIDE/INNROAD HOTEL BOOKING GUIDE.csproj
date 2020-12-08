@@ -43,14 +43,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="MyFactory\Factory.cs" />
     <Compile Include="Normal Classes\Address.cs" />
-    <Compile Include="Normal Classes\CheckAvailability.cs" />
+    <Compile Include="Normal Classes\CheckHotelAvailability.cs" />
     <Compile Include="Normal Classes\Customer.cs" />
-    <Compile Include="Implementations\ErrorVerificationImpl.cs" />
-    <Compile Include="Interfaces\ErrorVerificationIntf.cs" />
+    <Compile Include="Repositories\GetSortedViewIntf.cs" />
+    <Compile Include="Services\ErrorVerificationImpl.cs" />
+    <Compile Include="Repositories\ErrorVerificationIntf.cs" />
     <Compile Include="Normal Classes\Hotel.cs" />
-    <Compile Include="Implementations\HotelAvailabilityImpl.cs" />
-    <Compile Include="Interfaces\HotelAvailabilityIntf.cs" />
+    <Compile Include="Services\GetSortedViewImpl.cs" />
+    <Compile Include="Services\HotelAvailabilityImpl.cs" />
+    <Compile Include="Repositories\HotelAvailabilityIntf.cs" />
     <Compile Include="Normal Classes\Logger.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

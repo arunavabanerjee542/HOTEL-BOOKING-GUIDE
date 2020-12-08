@@ -14,5 +14,7 @@ namespace INNROAD_HOTEL_BOOKING_GUIDE
 
         Dictionary<int,string> ShowAvaibleHotelsAndCity(List<Hotel> h, String country);
 
+        void ShowAvailableRooms(List<Hotel> h, string hotelname, int numofpersons);
+
     }
 }

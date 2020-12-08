@@ -74,6 +74,14 @@ namespace INNROAD_HOTEL_BOOKING_GUIDE
 
         }
 
-       
+        public void ShowAvailableRooms(List<Hotel> h, string hotelname, int numofpersons)
+        {
+           IEnumerable<Hotel> hotel = h.Where(x => (x.name == hotelname) && (x.rooms[numofpersons-1].vacantrooms !=0));
+        
+            foreach(Hotel hh in hotel)
+            {
+                Console.WriteLine("In " + hh.name + " " + hh.rooms[numofpersons-1].vacantrooms + " Rooms are available for " + numofpersons+ " persons" );
+            }
+        }
     }
 }

@@ -101,7 +101,7 @@ namespace INNROAD_HOTEL_BOOKING_GUIDE
 
             Hotel h8 = new Hotel(" Royal House ", new Address(" Rabindra Sarobar ", "Kolkata", "West Bengal", "India", 033335));
             h8.rooms = new List<Room>()
-            {
+            { 
                 new Room(1,8000,0),
                 new Room(2,9800,0),
                 new Room(3,10100,7),
@@ -127,11 +127,32 @@ namespace INNROAD_HOTEL_BOOKING_GUIDE
         }
 
 
-
-
-        public int getAverageCost()
+        public Dictionary<string,int> getAverageCost(IEnumerable<Hotel> h)
         {
-            return 0;
+            Dictionary<string, int> dic = new Dictionary<string, int>();
+
+            foreach(Hotel hh in h)
+            {
+                int sum = 0;
+                int numberofpersons = 0;
+                for(int i=0;i<hh.rooms.Count();i++)
+                {
+                    sum = sum + ((i + 1) * (hh.rooms[i].cost));
+                    numberofpersons = numberofpersons + (i + 1);
+
+                }
+
+                int avg = sum / numberofpersons;
+
+                if (!dic.ContainsKey(hh.name))
+                {
+                    dic.Add(hh.name, avg);
+                }
+
+            }
+
+            return dic;
+        
         }
 
 
