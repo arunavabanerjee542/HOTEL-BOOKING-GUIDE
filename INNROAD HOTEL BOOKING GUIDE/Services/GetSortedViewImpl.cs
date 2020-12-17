@@ -29,9 +29,57 @@ namespace INNROAD_HOTEL_BOOKING_GUIDE.Services
                 Console.WriteLine(d.Key + " ---> " + d.Value +"/person");
             }
 
+           
 
 
         }
+
+
+        public void GroupedView()
+        {
+
+            var h = Factory.getHotel().getHotelDetails();
+
+           var res = h.GroupBy(x => new
+            {
+                x.address.country,
+                x.address.state
+            }
+            );
+
+
+            foreach(var  x in res)
+            {
+                Console.WriteLine(" Country :" + x.Key.country );
+
+                Console.WriteLine();
+                Console.WriteLine(" State --> :" + x.Key.state);
+                Console.WriteLine();
+                foreach(var i in x)
+                {
+                    Console.WriteLine("Hotel Name---> " +i.name + " " + " City ---> "+ i.address.city + " ");
+
+                    foreach(var r in i.rooms)
+                    {
+                        Console.WriteLine( "Persons --- > " + r.nunberofperson +" " + " Rooms Available -----> " +r.vacantrooms+" " + "   Price/day ---> "+ r.cost);
+                    }
+                    Console.WriteLine();
+                }
+                Console.WriteLine();
+
+            }
+
+
+
+              
+        }
+
+
+
+
+
+
+
 
     }
 

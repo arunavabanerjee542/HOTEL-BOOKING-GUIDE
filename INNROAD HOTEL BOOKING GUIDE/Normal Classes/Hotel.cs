@@ -103,7 +103,7 @@ namespace INNROAD_HOTEL_BOOKING_GUIDE
             h8.rooms = new List<Room>()
             { 
                 new Room(1,8000,0),
-                new Room(2,9800,0),
+                new Room(2,9800,50),
                 new Room(3,10100,7),
                 new Room(4,11300,7)
 

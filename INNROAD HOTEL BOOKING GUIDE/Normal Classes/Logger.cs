@@ -14,8 +14,7 @@ namespace INNROAD_HOTEL_BOOKING_GUIDE.Normal_Classes
             Console.WriteLine(" How can we help you ");
             Console.WriteLine(" 1---> Check out room availability ");
             Console.WriteLine(" 2--> Filter the Hotels based on their price ");
-            Console.WriteLine(" 3--> Change Your State preference ");
-            Console.WriteLine(" 4--> Change Your Country Preference ");
+            Console.WriteLine(" 3--> Hotels Grouped By Country and States ");
 
             int x = Convert.ToInt32(Console.ReadLine());
 

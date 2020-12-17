@@ -10,5 +10,7 @@ namespace INNROAD_HOTEL_BOOKING_GUIDE.Repositories
     {
          void SortedView();
 
+        void GroupedView();
+
     }
 }

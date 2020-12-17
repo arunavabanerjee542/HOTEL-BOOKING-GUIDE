@@ -36,6 +36,11 @@ namespace INNROAD_HOTEL_BOOKING_GUIDE
                         sortedview.SortedView();
                         break;
 
+                    case 3:
+                        sortedview.GroupedView();
+                        break;
+
+
 
                 }
 
